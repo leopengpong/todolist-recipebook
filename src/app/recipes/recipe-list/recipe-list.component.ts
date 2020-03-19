@@ -12,9 +12,9 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('A test recipe', 'this is a test', 
-      'https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/153558006-tips-healthy-cat-632x475.jpg'),
-    new Recipe('Another test recipe', 'this is a test', 
-      'https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/153558006-tips-healthy-cat-632x475.jpg'),
+      'https://images-na.ssl-images-amazon.com/images/I/71QQ5IoWctL._AC_SL1036_.jpg'),
+    new Recipe('Another test recipe', 'this is a test',
+      'https://images-na.ssl-images-amazon.com/images/I/71QQ5IoWctL._AC_SL1036_.jpg'),
   ];
 
   @Output() recipeSelected = new EventEmitter<Recipe>();
@@ -27,5 +27,4 @@ export class RecipeListComponent implements OnInit {
   onSelect (recipe: Recipe) {
     this.recipeSelected.emit(recipe);
   }
-
 }
